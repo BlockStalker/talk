@@ -1,0 +1,23 @@
+title: "[IOI] - "
+labels: ["ioi"]
+body:
+  - type: dropdown
+    id: network
+    attributes:
+      label: Which Algorand network?
+      options:
+        - MainNet
+        - TestNet
+        - BetaNet
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: ioi
+    attributes:
+      label: Details
+      description: "Share details on keys (Accounts, Asset IDs, App IDs) and what you found"
+      value: |
+        So there I was...
+    validations:
+      required: true

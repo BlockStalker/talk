@@ -1,0 +1,28 @@
+title: "[REP] - "
+labels: ["rep"]
+body:
+  - type: dropdown
+    id: keytype
+    attributes:
+      label: What type of Algorand key?
+      options:
+        - Account (Wallet Address)
+        - Asset Id
+        - Application Id
+        - Other/Multiple
+    validations:
+      required: true
+  - type: input
+    id: key
+    attributes:
+      label: Key
+      description: Enter the (Account Address, Asset Id, App Id)
+    validations:
+      required: true
+  - type: textarea
+    id: ioi
+    attributes:
+      label: Details
+      description: "Is this a fix?  A new addition?  Provide context"
+    validations:
+      required: true
